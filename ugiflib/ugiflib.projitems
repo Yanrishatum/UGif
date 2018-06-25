@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>e6bf6f23-bcbb-4ef3-b691-883092161e7c</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>ugiflib</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)src\Array.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\cs\Boot.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\cs\internal\Exceptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\cs\internal\FieldLookup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\cs\internal\Function.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\cs\internal\HxObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\cs\internal\Runtime.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\cs\internal\StringExt.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\cs\io\NativeInput.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\cs\io\NativeOutput.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\cs\Lib.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\format\gif\Data.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\format\gif\Reader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\format\gif\Tools.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\format\gif\Writer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\format\png\Data.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\format\png\Tools.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\format\png\Writer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\format\tools\Deflate.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\haxe\crypto\Crc32.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\haxe\ds\List.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\haxe\io\ArrayBufferView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\haxe\io\Bytes.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\haxe\io\BytesBuffer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\haxe\io\BytesOutput.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\haxe\io\Eof.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\haxe\io\Error.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\haxe\io\Input.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\haxe\io\Output.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\haxe\lang\Null.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\haxe\Log.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\haxe\zip\Compress.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Math.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Reflect.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Std.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\sys\io\File.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\sys\io\FileInput.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\sys\io\FileOutput.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Type.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\ugiflib\UGifLib.cs" />
+  </ItemGroup>
+</Project>

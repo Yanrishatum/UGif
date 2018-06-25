@@ -1,0 +1,11 @@
+-lib format
+-cp .
+-dce full
+--macro include("format.gif")
+--macro include("sys.io.File")
+--macro include("ugiflib")
+--macro keep("format.gif")
+--macro keep("sys.io.File")
+--macro keep("ugiflib")
+-main ugiflib.Test
+--interp
