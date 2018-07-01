@@ -67,27 +67,19 @@ namespace UGif
         {
           frameRate = 100
         };
-
-        AnimationClipSettings settings = new AnimationClipSettings
-        {
-          loopTime = true
-        };
-        AnimationUtility.SetAnimationClipSettings(clip, settings);
       }
       else
       {
-        clip.ClearCurves();
         clip.frameRate = 100;
       }
-
-
+      
       EditorCurveBinding binding = new EditorCurveBinding
       {
         type = typeof(SpriteRenderer),
         path = "",
         propertyName = "m_Sprite"
       };
-
+      
       ObjectReferenceKeyframe[] keyframes = new ObjectReferenceKeyframe[sprites.Length + 1];
       float frame = 0;
 
@@ -105,13 +97,13 @@ namespace UGif
       {
         keyframes[sprites.Length] = new ObjectReferenceKeyframe
         {
-          time = (float)frame / (float)100.0,
-          value = sprites[0]
+          time = frame,
+          value = sprites[sprites.Length - 1]
         };
       }
       
       AnimationUtility.SetObjectReferenceCurve(clip, binding, keyframes);
-
+      
       if (newAsset)
       {
         AssetDatabase.CreateAsset(clip, clipPath);
